@@ -1,0 +1,219 @@
+*{
+    /border: 1px black solid;
+    transition: opacity 0.8s,transform 2s;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background-color: #fff;
+    box-shadow: 0 1px 4px rgba(146,161,176,.3);
+    height: 80px;
+    z-index:1000;
+}
+.navbar{
+    display: flex;
+    margin-right: 100px;
+    
+}
+.logo{
+    margin-left: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+ul{
+    display: flex;
+}
+li{
+    margin: 20px;
+    list-style: none;   
+}
+.navbar ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+}
+#home{
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+    width: 100em;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(230, 230, 255);
+    margin:90px auto 30px auto;
+    box-shadow: 5px 5px 1px 1px rgb(150, 129, 207);
+}
+.portrait{
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+    box-shadow: 0px 6px 15px rgb(235, 231, 16);
+}
+.content{
+    width: 370px;
+    font-size: 35px;
+    height: 400px;
+    align-items: center;
+    margin-left: auto;
+    
+}
+.image{
+    height: 500px;
+    align-self: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+.content span{
+    color: rgb(250, 37, 9);
+}
+.home .btn {
+    margin-top: 1rem;
+    position: absolute;
+    line-height: 0;
+    padding: 1.6rem 3rem;
+    border-radius: 4em;
+    transition: 0.5s;
+    color: #fff;
+    background: #2506ad;
+    box-shadow: 0px 5px 18px rgba(48, 68, 247, 0.6);
+    font-family: "Nunito", sans-serif;
+    text-decoration: none;
+  }
+  .home .btn span {
+    font-weight: 700;
+    font-size: 1.7rem;
+    letter-spacing: 0.1rem;
+    
+  }
+  .home .btn:hover {
+    background: #1a047e;
+  }
+  .typing-text{
+    font-size: 27px;
+  }
+  .heading{
+    text-align: center;
+    font-size: 50px;
+  }
+  #about{
+    height: 85vh;
+    border: 1px black solid;
+    background: rgb(230, 230, 255);
+    width:100em;
+    margin:60px auto 40px auto;
+    box-shadow: 5px 5px 1px 1px rgb(150, 129, 207);
+  }
+.about .content{
+    all:unset;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+}
+.content h3{
+    font-size: 30px;
+}
+.tag{
+    font-size: 30px;
+}
+.about .content p{
+    width: 40em;
+    margin: 50px auto auto 180px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.about .content h3,
+.tag{
+    width: 300px;
+    margin-left: 180px;
+}
+.box{
+    margin-top: 20px;
+    width: 600px;
+    margin-left: 180px;
+}
+.about .content .box p{
+    width: 600px;
+    margin: 20px auto auto 0px;
+}
+.appear{
+    opacity: 0;
+    transform: translateY(40px);
+}
+.appear.visible{
+    opacity: 1;
+    transform: translateY(0);
+}
+.resumebtn{
+    width: 140px;
+    height: 50px;
+    margin-left: 180px;
+    margin-top: 30px;
+    font-size: 28px;
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    background: #3318ac;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4em;
+    transition: 0.5s;
+}
+.resumebtn:hover{
+    background: #1a047e;
+}
+.resumebtn a{
+    text-decoration: none;
+
+}
+.navbar ul li .active {
+    text-decoration: underline;
+    font-size: 25px;
+    transition: 0.3s;
+}
+.tree{
+    height: 87vh;
+    width: 100em;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 20px auto;
+}
+.branchimg{
+    width: 150px;
+    height: 150px;
+}
+.uppertree,.lowertree{
+    display: flex;
+    justify-content: space-between;
+}
+.branch{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.connector{
+    height: 50px;
+    width: 9px;
+    background: black;
+    border-radius: 10px;
+}
+.mainbranch{
+    height:10px ;
+    background-color: black;
+    border-radius: 20px;
+    width: 71.5em;
+    margin: auto;
+}
+.innertree{
+    width: 80em;
+    margin: auto;
+}
