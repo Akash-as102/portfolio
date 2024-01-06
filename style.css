@@ -1,10 +1,8 @@
 *{
-    /border: 1px black solid;
-    transition: opacity 0.8s,transform 2s;
+   /border: 1px black solid;
+    transition: opacity 0.8s ease-in-out,transform 2s;
 }
-html{
-    scroll-behavior: smooth;
-}
+
 header{
     display: flex;
     justify-content: space-between;
@@ -41,9 +39,13 @@ li{
     color: black;
     font-size: 20px;
 }
+.navbar ul li a:hover{
+    color: rgb(161, 161, 235);
+    font-size: 160%;
+}
 #home{
     height: 800px;
-    display: flex;
+    display: none;
     flex-direction: row;
     width: 100em;
     justify-content: space-around;
@@ -51,6 +53,11 @@ li{
     background-color: rgb(230, 230, 255);
     margin:90px auto 30px auto;
     box-shadow: 5px 5px 1px 1px rgb(150, 129, 207);
+    opacity: 0;
+}
+#home.active{
+    display: flex;
+    opacity: 1;
 }
 .portrait{
     width: 500px;
@@ -72,9 +79,10 @@ li{
     margin-right: auto;
     margin-left: auto;
 }
-.content span{
+span{
     color: rgb(250, 37, 9);
 }
+
 .home .btn {
     margin-top: 1rem;
     position: absolute;
@@ -106,11 +114,17 @@ li{
   }
   #about{
     height: 85vh;
-    border: 1px black solid;
     background: rgb(230, 230, 255);
     width:100em;
-    margin:60px auto 40px auto;
+    margin:100px auto 40px auto;
     box-shadow: 5px 5px 1px 1px rgb(150, 129, 207);
+    opacity: 0;
+    display: none;
+    padding-top: 1px;
+  }
+  #about.active{
+    display:block;
+    opacity: 1;
   }
 .about .content{
     all:unset;
@@ -129,12 +143,12 @@ li{
     width: 40em;
     margin: 50px auto auto 180px;
     font-size: 30px;
-    font-weight: bold;
 }
 .about .content h3,
 .tag{
     width: 300px;
     margin-left: 180px;
+    font-weight: bold;
 }
 .box{
     margin-top: 20px;
@@ -183,9 +197,15 @@ li{
 .tree{
     height: 87vh;
     width: 100em;
-    display: flex;
+    display: none;
+    opacity: 0;
     flex-direction: column;
-    margin: 0 auto 20px auto;
+    margin: 90px auto 20px auto;
+    background: rgb(230, 230, 255);
+}
+.tree.active{
+    display: flex;
+    opacity: 1;
 }
 .branchimg{
     width: 150px;
@@ -216,4 +236,112 @@ li{
 .innertree{
     width: 80em;
     margin: auto;
+}
+.education{
+    height: 87vh;
+    width:100em;
+    margin:90px auto auto auto;
+    background: burlywood;
+    opacity: 0;
+    display: none;
+}
+.education.active{
+    opacity:1;
+    display: block;
+}
+.education h1{
+    text-align: center;
+    font-size: 55px;
+}
+.education img{
+    width: 26em;
+    height: 16em;
+    margin:auto 20px;
+}
+.education h3{
+    color: green;
+}
+.institute{
+    display: flex;
+    width: 80em;
+    height: 20em;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: bisque;
+    transition:transform 1s;
+}
+.institute:hover{
+    transform: scale(105%);
+
+}
+.contact{
+    height: 80vh;
+    width: 100em;
+    margin: 99px auto 20px auto;
+    background-color: rgb(230, 230, 255);
+    opacity: 0;
+    display: none;
+}
+.contact.active{
+    opacity: 1;
+    display: block;
+}
+.contact h1{
+    text-align: center;
+    font-size: 50px;
+}
+.details{
+    margin-left: 30px;
+    height: 200px;
+    margin-top: 30px;
+}
+.contacts{
+    margin-left: 40px;
+    height: 300px;
+    margin-top: 70px;
+    margin-bottom: auto;
+    font-size: 20px;
+}
+.contactdetail{
+    display: flex;
+    justify-content: center;
+    height: 32em;
+    width: 80em;
+    margin-top: 3em;
+}
+.instagramicon img, .linkedinicon img{
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    transition: none;
+}
+.logo{
+    margin: 20px;
+}
+.logo img:hover{
+    box-shadow: 0px 5px 10px;
+    border-radius: 14px;
+    transform: scale(1.2);
+}
+.helpdeskimg{
+    width: 40em;
+    height: 30em;
+    border-radius: 40px;
+    box-shadow: 5px 5px 2px;
+    opacity: 0.8;
+}
+.foot{
+    background-color: rgba(0, 0, 255, 0.651);
+    text-align: center;
+    height: 60px;
+    display: none;
+    opacity: 0;
+}
+.foot h3{
+    margin-top: 15px;
+}
+.foot.active{
+    opacity: 1;
+    display: block;
 }
